@@ -1,0 +1,130 @@
+\documentclass{article}
+\usepackage{tabularx}
+\usepackage[showframe=false]{geometry}
+\usepackage{longtable}
+\usepackage{wasysym}  
+\usepackage{enumitem}   
+\usepackage{changepage}
+
+\setlength{\marginparwidth}{1.2in}
+\let\oldmarginpar\marginpar
+\renewcommand\marginpar[1]{\-\oldmarginpar[\raggedleft #1]%
+{\raggedright #1}}    
+
+\newenvironment{checklist}{%
+  \begin{list}{}{}% whatever you want the list to be
+  \let\olditem\item
+  \renewcommand\item{\olditem -- \marginpar{$\Box$} }
+  \newcommand\checkeditem{\olditem -- \marginpar{$\CheckedBox$} }
+}{%
+  \end{list}
+}
+\begin{document}
+\bf \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\bf \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\begin{longtable}[t]{L{0.3cm}L{5.7cm}R{7cm}}
+1. & PROPOSED POSITION FOR \underline{THIS} PROJECT: \\
+\\
+2. & NAME: & Name \\
+\\
+3. & DATE OF BIRTH: & \normalfont Day Month Year \\
+\\
+4. & NATIONALITY: & \normalfont Nationality \\
+\\
+5. & PERSONAL ADDRESS: \\
+\\
+{} & TELEPHONE NO.: \\
+{} & FAX NO.: \\
+{} & E-MAIL ADDRESS: \\
+\\
+6. & EDUCATION: & \normalfont Degree, Major, School, Location, Year \\
+\\
+7. & OTHER TRAINING: \\
+\\
+8. & LANGUAGES \& DEGREE OF PROFICIENCY: \\
+\\
+9. & MEMBERSHIP OF PROFESSIONAL SOCIETIES: \\
+\\
+10. & COUNTRIES OF WORK EXPERIENCE: & \normalfont List Alphabetically \\
+\\
+11. & EMPLOYMENT RECORD \\
+{} & \newenvironment{mylist}[1]% #1 is widest label
+     { \list{}%
+           {\settowidth\labelwidth{{#1}}%
+            \leftmargin\labelwidth
+            \leftmargin\labelsep}%
+}{\endlist}
+\begin{mylist}{}
+	\setlength{\itemsep}{0pt}
+\item Date Range
+\item Employer
+\item Project Name and description of duties
+\end{mylist} & \newenvironment{mylist}[1]% #1 is widest label
+     { \list{}%
+           {\settowidth\labelwidth{{#1}}%
+            \leftmargin\labelwidth
+            \leftmargin\labelsep}%
+}{\endlist}
+\begin{mylist}{}
+	\setlength{\itemsep}{0pt}
+\item Date Range
+\item Employer
+\item Project Name. \normalfont Description of duties which goes on and on and on and on and on and on and onand onand onand onand onand onand onand onand on.
+\end{mylist}
+\\
+12. & DETAILED TASKS ASSIGNED: & \normalfont WORK UNDERTAKEN WHICH BEST ILLUSTRATES CAPABILITY TO HANDLE THE TASKS ASSIGNED: \\
+\\
+{} & \newenvironment{mylist}[1]% #1 is widest label
+     { \list{}%
+           {\settowidth\labelwidth{{#1}}%
+            \leftmargin\labelwidth
+            \leftmargin\labelsep}%
+}{\endlist}
+\begin{mylist}{}
+	\setlength{\itemsep}{0pt}
+\item Position Name (From TOR)
+\item Primary Responsibilities
+\item \normalfont Task X.1:
+\item Secondary Responsibilities
+\item \normalfont Task X.1:
+\end{mylist} & \newenvironment{mylist}[1]% #1 is widest label
+     { \list{}%
+           {\settowidth\labelwidth{{#1}}%
+            \leftmargin\labelwidth
+            \leftmargin\labelsep}%
+}{\endlist}
+\begin{mylist}{}
+	\setlength{\itemsep}{0pt}
+\item \normalfont {\underline{Project Name.}} {Location (Year-Year}, {Position}. 
+\item \normalfont {Description of Responsibilities}
+\item \normalfont {Tasks performed, activities} 
+\end{mylist}
+%Position Name (From TOR) & \normalfont \underline{Project Name}. Location (Year-Year). Position. Description of Responsibilities, tasks performed, activities \\
+\\
+13. & PERSONAL/PERMANENT EMPLOYMENT STATUS CERTIFICATION & YES NO \\
+\\
+(i) & I am a former ADB Staff member & \multicolumn{1}{r}{$\Box$ {\hspace{10pt}} $\Box$ {\hspace{10pt}}} \\
+\\
+{} & if yes, I retired/resigned from the ADB more than twelve (12) months ago & \multicolumn{1}{r}{$\Box$ {\hspace{10pt}} $\Box$ {\hspace{10pt}}} \\
+\\
+(ii) & I am a close relative of a current ADB staff member & \multicolumn{1}{r}{$\Box$ {\hspace{10pt}} $\Box$ {\hspace{10pt}}} \\
+(iii) & I am the spouse of a current ADB staff member & \multicolumn{1}{r}{$\Box$ {\hspace{10pt}} $\Box$ {\hspace{10pt}}} \\
+\\
+(iv) & I am a regular full-time employee of the Consultant or associated firm & \multicolumn{1}{r}{$\Box$ {\hspace{10pt}} $\Box$ {\hspace{10pt}}} \\
+(v) & I was involved in the preparation of the terms of reference for this consulting services agreement & \multicolumn{1}{r}{$\Box$ {\hspace{10pt}} $\Box$ {\hspace{10pt}}} \\
+\end{longtable}
+\begin{adjustwidth}{2em}{2em} 
+\normalfont I, the undersigned, confirm that
+\end{adjustwidth}
+\begin{itemize}[leftmargin=4em]
+\normalfont  \item[(i)] To the best of my knowledge, this CV correctly describes myself, my qualifications, and my experience; and
+\item[(ii)] \normalfont I am not employed by the Executing/Implementing Agency
+\end{itemize}
+\begin{adjustwidth}{2em}{0pt} 
+\normalfont I understand that any wilful misstatement in this CV may lead to my disqualification or dismissal, if engaged. \\
+\\
+\bfseries SIGNATURE: {\hspace{80pt}} DATE OF SIGNING:
+\end{adjustwidth}
+
+\end{document}
