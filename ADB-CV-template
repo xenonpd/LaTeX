@@ -1,7 +1,3 @@
-LaTeX
-=====
-
-
 \documentclass{article}
 \usepackage{tabularx}
 \usepackage[showframe=true]{geometry}
