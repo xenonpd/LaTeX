@@ -4,7 +4,7 @@ LaTeX
 
 \documentclass{article}
 \usepackage{tabularx}
-\usepackage[showframe=false]{geometry}
+\usepackage[showframe=true]{geometry}
 \usepackage{longtable}
 \usepackage{wasysym}  
 \usepackage{enumitem}   
