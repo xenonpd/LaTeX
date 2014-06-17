@@ -1,0 +1,62 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{showframe=true}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or epsÂ§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage{longtable}
+
+\begin{document}
+\begin{center} Appendix 3 - Curriculum Vitae \end{center}
+
+\begin{center} \bf BioData \end{center}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedright\arraybackslash}p{#1}}
+\begin{longtable}[t]{L{9cm}R{10.5cm}}
+Name: & {name} \\
+\\
+Date of Birth: & {dateofbirth} \\
+\\
+Nationality: & {nationality} \\
+\\
+Education: & {education} \\
+\\
+Countries of Work Experience: & {countries} \\
+\end{longtable}
+\begin{center} \bf Employment Record \end{center}
+\begin{longtable}[t]{L{9cm}R{10.5cm}}
+Date range: & {daterange} \\
+\\
+Employer: & {employer} \\
+\\
+Positions Held: & {positions} \\
+\end{longtable}
+\begin{center} \bf Relevant Project Experience \end{center}
+\begin{longtable}[t]{L{9cm}R{10.5cm}}
+Name of assignment or project: & {project name} \\
+\\
+Year: & {project year} \\
+\\
+Location: & {project location} \\
+\\
+Client: & {projectclient} \\
+\\
+Main project features: & {projectfeatures} \\
+\\
+Positions held: & {projectposition} \\
+\\
+Activities performed: & {project activities} %We might want to make this a list
+\end{longtable}
+\begin{center} \bf Certification: \end{center}
+I, the undersigned, certify that to the best of my knowledge and belief, this CV correctly describes myself, my qualifications, and my experience. I understand that any wilful misstatement described herein may lead to my disqualification or dismissal, if engaged.
+\\
+\begin{longtable}[t]{L{6cm}R{10.5cm}}
+Date: & date \\
+\\
+Full name of the Advisor: & [Signature of the Advisor] Day/Month/Year
+\\
+\end{longtable}
+\end{document}
