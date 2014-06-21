@@ -1,0 +1,99 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[showframe=false]{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or epsÂ§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{tabularx}
+\usepackage{longtable}
+
+\begin{document}
+\begin{center} \bf CURRICULUM VITAE \end{center}
+
+\noindent Proposed position in assignment: \bf proposed position \normalfont
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedright\arraybackslash}p{#1}}
+\begin{longtable}[l]{L{.5cm}L{3cm}L{7cm}} 
+1. & Family name: & LAST NAME \\
+2. & First names: & First Name Middle Name \\
+3. & Date of birth: & Day Month Year \\
+4. & Nationality: & Nationality \\
+5. & Civil status: & Single/Married/Divorced \\
+6. & Education: \\
+\end{longtable}%
+\begin{longtable}[c]{|L{7cm}|L{7cm}|}
+\hline
+\emph{Institution} & {institution} \\
+\hline
+\emph{Date: from (month/year) to (month/year)} & {dates} \\
+\hline
+\emph{Degree(s) or Diploma(s) obtained:} & {degree} \\
+\hline
+\end{longtable}
+\begin{longtable}[l]{L{.5cm}L{3cm}L{9cm}} 
+7. & Language skills: & (Mark 1 to 5 for competence, 5 being the highest) \\
+\end{longtable}
+\begin{longtable}[c]{|L{3.2cm}|L{3.3cm}|L{3.3cm}|L{3.3cm}|} 
+\hline
+\emph{Language} & \emph{Reading} & \emph{Speaking} & \emph{Writing} \\
+\hline
+{language1} & {read1} & {speak1} & {write1} \\
+\hline
+{language2} & {read2} & {speak2} & {write2} \\
+\hline
+{language3} & {read3} & {speak3} & {write3} \\
+\hline
+\end{longtable}
+\begin{longtable}[l]{L{.5cm}L{7cm}L{5cm}}
+8. & Membership of professional bodies: & {membership1} {membership2} {membership3} \\
+9. & Other skills (e.g. computer literacy, etc): & {skill1}, {skill2}, {skill3} \\
+10. & Present position & {present position} \\
+11. & Years within the firm: & {years employed} \\
+12: & Key qualifications (relevant to the programme): & {qualifications} \\
+\end{longtable}
+\bf{Name in Bold} \normalfont followed by description of accomplishments, project experiences, etc. This text can also be used in the Key Qualifications section of the World Bank Format CV.
+\begin{longtable}[l]{L{.5cm}L{8cm}L{5cm}}
+13. & Specific Eastern European and CIS experience: \\
+\end{longtable}
+\begin{longtable}[c]{|L{4cm}|L{10cm}|}
+\hline
+\emph{Country} & \emph{Date: from (month/year) to (month/year)} \\
+\hline
+{country1} & {month/year to month/year1} \\
+\hline
+{country2} & {month/year to month/year2} \\
+\hline
+{country3} & {month/year to month/year3} \\
+\hline
+\end{longtable}
+\begin{longtable}[l]{L{.5cm}L{7cm}L{5cm}}
+14. & Professional Experience Record: \\
+\end{longtable}
+\begin{longtable}[c]{|L{4cm}|L{10cm}|}
+\hline
+\emph{Date: from (month/year) to (month/year)} & {M/YYYY to Present} \\
+\hline
+\emph{Location:} & \bf Country Name(s) \normalfont \\
+\hline
+\emph{Company:} & Company Name \\
+\hline
+\emph{Position:} & \bf Position Name \normalfont \\
+\hline
+\emph{Description:} & Description of Duties. Include CLIENT NAME in this section. \\
+\hline
+\end{longtable}
+\begin{longtable}[c]{|L{4cm}|L{10cm}|}
+\hline
+\emph{Date: from (month/year) to (month/year)} & {M/YYYY to M/YYYY} \\
+\hline
+\emph{Location:} & \bf Country Name(s) \normalfont \\
+\hline
+\emph{Company:} & Company Name \\
+\hline
+\emph{Position:} & \bf Position Name \normalfont \\
+\hline
+\emph{Description:} & Description of Duties. Include CLIENT NAME in this section. \\
+\hline
+\end{longtable}
+\end{document}  
