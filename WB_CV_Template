@@ -1,0 +1,148 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[top=1in, bottom=1.5in, left=1.8cm, right=1.8cm]{geometry}
+\geometry{showframe=true}
+%\geometry{landscape}                		% Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or epsÂ§ with pdflatex; use eps in DVI mode
+\usepackage{enumitem}	
+\usepackage{amssymb}
+\usepackage{calc}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{array}
+
+\newlength{\remaining}
+\newcommand{\lineunder}[1]{%
+\setlength{\remaining}{12.8cm-\widthof{{#1}}}
+\underline{\hspace*{.5cm}\smash{#1}\hspace*{\remaining}}}
+	
+\begin{document}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}%
+\newcolumntype{C}[1]{>{\raggedright\arraybackslash}p{#1}}%
+\begin{longtable}[l]{@{\extracolsep{\fill}}L{4cm}C{14cm}}
+\textbf{Proposed Position:} & \lineunder{Position} \normalfont \\
+\\
+\textbf{Name of Firm:} & \lineunder{Firm name}\\
+\\
+\textbf{Name of Staff:} & \lineunder{Name of staff} \\
+\\
+\textbf{Profession:} & \lineunder{profession} \\
+\\
+\textbf{Date of Birth:} & \lineunder{Date of Birth (DD Month YYYY)} \\
+\\
+\textbf{Years with Firm/Entity:} & \lineunder{Number} \\
+\\
+\textbf{Nationality:} & \lineunder{nationality} \\
+\end{longtable}
+\noindent\textbf{Membership in Professional Societies:}
+\begin{itemize}[leftmargin=*]
+\item Membership 1
+\item Membership 2
+\item Membership 3
+\end{itemize}
+\hrule
+\hspace{1cm} \\
+\hspace{1cm} \\
+\noindent\textbf{Detailed Tasks Assigned:} detailed task description going on and on on and on on and on on and on and on on and on on and onand on on and on on and onand on on and on on and onand on on and on on and onand on on and on on and onand on on and on on and onand on on and on on and onand on on and on on and onand on on and on on and onand on on and on on and on \\
+\hspace{1cm} \\
+\hrule
+\hspace{1pt} \\
+\hspace{1pt} \\
+\textbf{Key Qualifications:}
+\hspace{1pt} \\
+\hspace{1pt} \\
+\noindent \textbf{Mr. G. D. Consultant} has significant experience in economic analysis, consulting, reporting, research, and studies in various parts of the world. He has worked in senior positions for many development projects for a number of multi-lateral and bi-lateral donor organizations. His education includes a degree in history, a Master?s Degree in Business Administration and a Master of Arts Degree in International Relations. His broad professional experience ranges from consulting to teaching.  In graduate school, he completed training in alternative dispute resolution and an intensive course in the Japanese language. He currently resides in Tokyo. \\
+\hspace{1cm} \\
+\hrule
+\hspace{1cm} \\
+\hspace{1cm} \\
+\textbf{Education:} 
+\hspace{1cm} \\
+\hspace{1cm} \\
+{Degree}, {Subject}, {University}, {Country}, {Year} \\
+\\
+{Degree}, {Subject}, {University}, {Country}, {Year} \\
+\\
+{Degree}, {Subject}, {University}, {Country}, {Year} \\
+\\
+\hrule
+\hspace{1cm} \\
+\hspace{1cm} \\
+\textbf{Employment Record:}
+\hspace{1pt} \\
+\hspace{1pt} \\
+\newcommand{\presemployment}[4]{
+	\noindent\textbf{FROM {#1} TO PRESENT} \\
+	\textbf{{#2}} \\
+	\textbf{{#3}} \\
+	\hspace{1pt} \\
+	{#4} \\
+	}
+\presemployment{MONTH, YEAR}{Position/Title}{Organization/Firm, Location}{Description of Duties}
+\newcommand{\projectexperience}[4]{
+	\begin{itemize}[leftmargin=*]
+		\item \textbf{{#1}}, \textbf{{#2}} \textbf{({#3})}. {#4}
+	\end{itemize}}
+\projectexperience{Project Name 1}{Country 1}{Year-Year 1}{Description of responsibilities 1}
+\projectexperience{Project Name 2}{Country 2}{Year-Year 2}{Description of responsibilities 2}
+\newcommand{\pastemployment}[5]{
+	\noindent\textbf{FROM {#1} TO {#2}} \\
+	\textbf{{#3}} \\
+	\textbf{{#4}} \\
+	\hspace{1pt} \\
+	{#5} \\
+}
+\pastemployment{MONTH, YEAR}{MONTH, YEAR}{Position/Title}{Organization/Firm, Location}{Description of Duties}
+\projectexperience{Project Name 1}{Country 1}{Year-Year 1}{Description of responsibilities 1}
+\projectexperience{Project Name 2}{Country 2}{Year-Year 2}{Description of responsibilities 2}
+\hrule
+\hspace{1pt} \\
+\hspace{1pt} \\
+\textbf{List of Previous Publications and Research:} \\
+\\
+\emph{Publications and Academic Articles:}
+\begin{itemize}[leftmargin=*]
+	\item {``Title''}, {\underline{Publication}}, {Vol. X}, {No. Y}. {(Year)}% Journal/Magazine/Other Periodical
+	\item {\underline{Title}}, {Publisher Name} {(Year)}% Book
+	\end{itemize}
+\hrule
+\hspace{1pt} \\
+\begin{longtable}[t]{L{4cm}L{4cm}L{4cm}L{4cm}}%
+	\textbf{Languages:} & \underline{Speaking} & \underline{Reading} & \underline{Writing}
+	\end{longtable}
+\newcommand{\languages}[4]{
+	\begin{longtable}[t]{L{4cm}L{4cm}L{4cm}L{4cm}}
+	{#1} & {#2} & {#3} & {#4}
+	\end{longtable}
+	}
+\languages{English}{Native}{Native}{Native}
+\languages{Language 2}{Speaking 2}{Reading 2}{Writing 2}
+\languages{Language 3}{Speaking 3}{Reading 3}{Writing 3}
+\hrule
+\hspace{1pt} \\
+\textbf{Certification:} \\
+\\
+I, the undersigned, certify that to the best of my knowledge and belief, these data correctly describe my qualifications, my experience, and me. \\
+\\
+\\
+\\
+\\
+\noindent\begin{tabular}{cc}
+\makebox[11.7cm]{\hrulefill} & \makebox[5.4cm]{\textbf{Date:} \hrulefill}\\
+\emph{[Signature of staff member and authorised representative of the firm]} & \emph{Day/Month/Year} \\[8ex]% adds space between the two sets of signatures
+\end{tabular}
+\\
+\\
+\renewcommand{\lineunder}[1]{%
+\setlength{\remaining}{11cm-\widthof{{#1}}}
+\underline{\hspace*{.5cm}\smash{#1}\hspace*{\remaining}}}
+\begin{longtable}[l]{L{5.5cm}C{14cm}}
+\textbf{Full name of staff member:} & \lineunder{Full name}
+\end{longtable}
+\renewcommand{\lineunder}[1]{%
+\setlength{\remaining}{8.5cm-\widthof{{#1}}}
+\underline{\hspace*{.5cm}\smash{#1}\hspace*{\remaining}}}
+\begin{longtable}[l]{L{8cm}C{9.5cm}}
+\textbf{Full name of authorized representative:} & \lineunder{Full name}
+\end{longtable}
+\end{document}  
