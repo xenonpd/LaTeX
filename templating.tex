@@ -1,38 +1,34 @@
 \documentclass[a4paper, 12pt, notitlepage]{report}
-
+\usepackage[english]{babel}
 \usepackage{amsfonts} % if you want blackboard bold symbols e.g. for real numbers
 \usepackage{graphicx} % if you want to include jpeg or pdf pictures
 
 \title{\LaTeX\ Project Template} % change this
 \author{Andrew D.A.C. Smith} % change this
 \date{\today} % change this
+\usepackage{xcolor}
+\usepackage{titling}
+
+\usepackage{titlesec} %below here is where you define how the chapters, sections and subsections should look
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\huge\bfseries\color{blue}}
+  {\thechapter}{20pt}{\Huge}
+\titleformat{\section}
+  {\normalfont\sffamily\Large\bfseries\color{cyan}}
+  {\thesection}{1em}{}
 
 \begin{document}
 
 %%%%%%%%%% PRELIMINARY MATERIAL %%%%%%%%%%
-\maketitle
-\begin{center}
-A project of 20 credit points at level 4. % change this
-\\[12pt]
-Supervised by Dr.\ Arne Kovac. % change this
-\end{center}
-\thispagestyle{empty}
-\newpage
-\section*{Acknowledgement of Sources} % this must be included in undergradate projects
-For all ideas taken from other sources (books, articles, internet), the source of the ideas is mentioned in the main text and fully referenced at the end of the report.
+\begin{titlepage} % uses the titling package to enable multiple title pages, enabling multiple title pages
+	test
+\end{titlepage}
 
-All material which is quoted essentially word-for-word from other sources is given in quotation marks and referenced.
-
-Pictures and diagrams copied from the internet or other sources are labelled with a reference to the web page or book, article etc.
-\\[12pt]
-Signed \dotfill Date \dotfill
-
-\tableofcontents 
 
 %%%%%%%%%% MAIN TEXT STARTS HERE %%%%%%%%%%
 
 %%%%%%%%%% SAMPLE CHAPTER %%%%%%%%%%
-\chapter{The First Chapter}
+\chapter*{The First Chapter}
 %
 The purpose of this document is to provide a template file suitable for a medium-sized undergraduate project.
 Copy the sample chapter as many times as you need.
@@ -41,15 +37,15 @@ Simply replace the existing text with your own
 
 Rest of the text introducing this chapter.
 
-\section{First section of this chapter}
+\section*{First section of this chapter}
 %
 The text of this section.
 
-\section{A subsequent section}
+\section*{A subsequent section}
 %
 Text introducing this section.
 
-\subsection{First subsection of this section}
+\subsection*{First subsection of this section}
 %
 The text of this subsection.
 
@@ -116,5 +112,9 @@ Subsections and further divisions can also be used in appendices.
 mixed models', \emph{Statistics in Medicine}, \textbf{27}, pp.435--48.
 
 \end{description}
+
+\begin{titlepage} % uses the titling package to enable multiple title pages, enabling multiple title pages
+	test
+\end{titlepage}
 
 \end{document}
