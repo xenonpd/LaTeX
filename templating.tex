@@ -1,11 +1,33 @@
 \documentclass[a4paper, 12pt, notitlepage]{report}
-
 \usepackage{amsfonts} % if you want blackboard bold symbols e.g. for real numbers
 \usepackage{graphicx} % if you want to include jpeg or pdf pictures
 
+%%%%%% The following materials were added by Marcus when testing the template %%%%%%%%%
+
+\usepackage[english]{babel} % uncertain of need for this package, but adding it back in an attempt to track Marcus' contributions
+\usepackage{xcolor} % package used by Marcus to enable independent coloring for section headers
+% \usepackage{titling} % uncertain of need for this package, but adding it back in an attempt to track Marcus' contributions ; NOTE: This package can be omitted and the PDF will still generate itself in the same way.
+\usepackage{titlesec} % package added by Marcus for some purpose with respect to defining chapters, sections and subsections should look
+
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily\huge\bfseries\color{blue}}
+  {\thechapter}{20pt}{\Huge}
+\titleformat{\section}
+  {\normalfont\sffamily\Large\bfseries\color{purple}}
+  {\thesection}{1em}{}
+
+% NOTE: The use of these formatting options makes the words "Chapter" and "Annex" disappear (versus when they are not in use)
+
+
+%%%%%%%%%%%%%%%
+
+
+%%% It is unclear to me why the following lines come before "preliminary materials" %%%
 \title{\LaTeX\ Project Template} % change this
 \author{Andrew D.A.C. Smith} % change this
 \date{\today} % change this
+%%%%%%%%%%%%%%%
+
 
 \begin{document}
 
